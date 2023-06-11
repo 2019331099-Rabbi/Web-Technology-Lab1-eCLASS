@@ -1,0 +1,32 @@
+CREATE DATABASE coursesdb3;
+USE coursesdb3;
+
+CREATE TABLE users (
+  user_name VARCHAR(45),
+  pass_word VARCHAR(45),
+  utype VARCHAR(45),
+  full_name VARCHAR(45),
+  user_id VARCHAR(20)
+);
+
+
+CREATE TABLE courses (
+  course_id VARCHAR(20),
+  course_name VARCHAR(45),
+  course_teacher VARCHAR(45)
+);
+
+
+CREATE TABLE enroll (
+  course_id VARCHAR(20),
+  course_name VARCHAR(45),
+  course_teacher VARCHAR(45),
+  user_name VARCHAR(20)
+);
+
+
+CREATE TABLE enrollments (
+  st_id VARCHAR(20),
+  st_name VARCHAR(45),
+  course_id VARCHAR(45)
+);
